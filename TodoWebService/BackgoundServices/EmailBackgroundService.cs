@@ -55,7 +55,7 @@ namespace TodoWebService.BackgoundServices
 
             return Task.CompletedTask;
         }
-        public Task StopAsync(CancellationToken cancellationToken)
+        public Task StopAsync(CancellationToken cancellationToken) 
         {
             _timer?.Change(Timeout.Infinite, 0);
 
