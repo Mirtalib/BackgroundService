@@ -12,8 +12,8 @@ using TodoWebService.Data;
 namespace TodoWebService.Migrations
 {
     [DbContext(typeof(TodoDbContext))]
-    [Migration("20230918172632_ToDoMig")]
-    partial class ToDoMig
+    [Migration("20231015085721_miq")]
+    partial class miq
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

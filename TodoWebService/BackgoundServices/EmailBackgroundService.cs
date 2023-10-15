@@ -1,6 +1,5 @@
 ﻿using System.Net.Mail;
 using System.Net;
-using TodoWebService.Data;
 using TodoWebService.Models.Entities;
 using TodoWebService.Services;
 
@@ -18,10 +17,10 @@ namespace TodoWebService.BackgoundServices
 
         }
 
-        private  async void DoWork(object? state)
+        private async void DoWork(object? state)
         {
 
-            using var scope = _serviceProvider.CreateScope();
+            using var scope = _serviceProvider!.CreateScope();
             _todoService= scope.ServiceProvider.GetService(typeof(ITodoService)) as TodoService;
 
             if (_todoService is null)
@@ -38,11 +37,11 @@ namespace TodoWebService.BackgoundServices
                             SmtpClient smtpClient = new SmtpClient("smtp.gmail.com")
                             {
                                 Port = 587,
-                                Credentials = new NetworkCredential("royalb9514@gmail.com", "lzen bgxq jagj nkkg"),
+                                Credentials = new NetworkCredential("akreminihat@gmail.com", "lvxt fkgr coiu epms"),
                                 EnableSsl = true
                             };
 
-                            smtpClient.Send("royalb9514@gmail.com","mirtalibhuseyinzade@gmail.com", "subject", "Salam");
+                            smtpClient.Send("akreminihat@gmail.com", "royalb9514@gmail.com", "subject", "Walooommm");
                             _todoService?.UpdateTodoItemNotify(i.Id, !i.Notify);
                         }
                     }

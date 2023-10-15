@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace TodoWebService.Migrations
 {
     /// <inheritdoc />
-    public partial class ToDoMig : Migration
+    public partial class miq : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
