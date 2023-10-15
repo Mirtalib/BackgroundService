@@ -9,9 +9,9 @@ namespace TodoWebService.Services
     public class TodoService : ITodoService
     {
 
-        private readonly TodoDbContext _context;
+        private readonly AppDbContext _context;
 
-        public TodoService(TodoDbContext context)
+        public TodoService(AppDbContext context)
         {
             _context = context;
         }

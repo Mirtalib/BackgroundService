@@ -14,7 +14,7 @@ builder.Services.AddMemoryCache();
 
 builder.Services.AddHttpContextAccessor();
 
-builder.Services.AddDbContext<TodoDbContext>(options =>
+builder.Services.AddDbContext<AppDbContext>(options =>
 {
     options.UseSqlServer(builder.Configuration.GetConnectionString("TodoDbConnectionString"));
 });

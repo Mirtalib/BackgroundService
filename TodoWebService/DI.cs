@@ -58,7 +58,7 @@ namespace TodoWebService
         {
             services.AddScoped<IRequestUserProvider, RequestUserProvider>();
 
-            services.AddIdentity<AppUser, IdentityRole>(setup => { }).AddEntityFrameworkStores<TodoDbContext>();
+            services.AddIdentity<AppUser, IdentityRole>(setup => { }).AddEntityFrameworkStores<AppDbContext>();
 
             services.AddScoped<IJwtService, JwtService>();
 

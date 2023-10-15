@@ -4,9 +4,9 @@ using TodoWebService.Models.Entities;
 
 namespace TodoWebService.Data
 {
-    public class TodoDbContext : IdentityDbContext<AppUser>
+    public class AppDbContext : IdentityDbContext<AppUser>
     {
-        public TodoDbContext(DbContextOptions options) : base(options)
+        public AppDbContext(DbContextOptions options) : base(options)
         {
         }
 

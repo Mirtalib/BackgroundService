@@ -11,7 +11,7 @@ using TodoWebService.Data;
 
 namespace TodoWebService.Migrations
 {
-    [DbContext(typeof(TodoDbContext))]
+    [DbContext(typeof(AppDbContext))]
     [Migration("20231015085721_miq")]
     partial class miq
     {
